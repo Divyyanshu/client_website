@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ggbio.in</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;1,400&family=Dancing+Script:wght@600&family=Lexend+Deca&family=Merriweather&family=Montserrat&family=Nunito:wght@600&family=Open+Sans&family=Oxygen&family=Playpen+Sans&family=Poppins:ital,wght@0,400;0,500;1,500&family=Raleway:wght@300;400&family=Roboto:ital,wght@0,400;0,500;1,400&family=Rubik&family=Urbanist&display=swap');
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">ggbio <span style="color: #fc036f">.in</span></h1>
+      <ul class="nav-link">
+        <li class="active"><a href="#"></a>Home</li>
+        <li><a href="#"></a>Blogs</li>
+        <li><a href="#"></a>Gallery</li>
+        <li><a href="#"></a>About Us</li>
+        <li class="ctn"><a href="#"></a>Contact Us</li>
+      </ul>
+      <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+    </nav>
+    <header>
+      <div class="header-content">
+        <h2>Explore the Biological World</h2>
+        <div class="line"></div>
+        <h1>Inspiring Awe in the Web of Life</h1>
+        <a href="#" class="ctn">learn More</a>
+      </div>
+    </header>
+
+    <!-- section -->
+    <section>
+      <div class="title">
+        <h1>My Blogs</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="./img/img1.png" alt="">
+          <h4>Everest Camp Trek</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat voluptatem vitae aspernatur unde illum sit, quaerat officia. Mollitia blanditiis velit ipsum saepe, accusamus odit minus dicta delectus eos repudiandae voluptas totam adipisci, laborum animi cupiditate nam nostrum quaerat commodi quasi quibusdam corrupti qui officiis sint provident! Natus, eum perferendis!</p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col">
+          <img src="./img/img2.png" alt="">
+          <h4>Everest Camp Trek</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellat voluptatem vitae aspernatur unde illum sit, quaerat officia. Mollitia blanditiis velit ipsum saepe, accusamus odit minus dicta delectus eos repudiandae voluptas totam adipisci, laborum animi cupiditate nam nostrum quaerat commodi quasi quibusdam corrupti qui officiis sint provident! Natus, eum perferendis!</p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <script>
+      const menubtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-link");
+      // use event listner
+      menubtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>

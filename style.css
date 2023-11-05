@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* navbar */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  position: absolute;
+  color: whitesmoke;
+  padding: 20px;
+}
+.nav-link {
+  display: flex;
+}
+.nav-link li {
+  margin: 0 30px;
+}
+/* .active{
+    color: #fc036f;
+    text-decoration: underline;
+    font-weight: bold;
+} */
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 2), rgba(0, 0, 0, 0.5)),
+    url(./img/bg-biology.jpg);
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.header-content {
+  color: whitesmoke;
+  margin-bottom: 150px;
+  text-align: center;
+}
+.header-content h2 {
+  font-size: 4vmin;
+}
+.line {
+  width: 150px;
+  height: 5px;
+  background-color: #fc036f;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+.header-content h1 {
+  font-size: 5vmin;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  margin: 50px 0 30px 0;
+}
+.ctn {
+  color: whitesmoke;
+  background-color: #fc036f;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.menu-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+/* section  */
+.section {
+  width: 80%;
+  margin: 80px auto;
+}
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: #49497e;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+/* mediquiry */
+@media only screen and (max-width: 850px) {
+  .menu-btn {
+    display: block;
+    width: 35px;
+  }
+  .navbar {
+    padding: 0;
+  }
+  .ctn {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .header-content h1 {
+    font-size: 4vmin;
+    font-weight: 900;
+    text-transform: capitalize;
+    border: 1px solid gray;
+    padding: 20px 20px;
+  }
+  .nav-link {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background-color: rgb(154, 73, 225);
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+  .nav-link li {
+    margin: 30px auto;
+  }
+}
