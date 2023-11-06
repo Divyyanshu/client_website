@@ -100,7 +100,7 @@ header {
   font-weight: 800;
 }
 .events .title h1{
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .row {
   display: flex;
@@ -157,7 +157,7 @@ p{
 }
 .explore-content h1{
   font-size: 7vmin;
-  margin: 50px;
+  margin: 20px;
 }
 .explore-content p{
   color: rgb(221,221,221);
@@ -168,6 +168,30 @@ p{
 }
 .explore-content .line{
   margin-bottom: 50px;
+}
+/* tours design */
+/* .tours .row .col{
+  width: 50%;
+}
+.tours .image-gallery{
+  display: flex;
+  flex-wrap: wrap;
+} */
+/* footer design */
+.footer{
+  height: 100px;
+  width: 100%;
+  background-color: #1c1e1e;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: whitesmoke;
+  margin: 5px;
 }
 /* mediquiry */
 @media only screen and (max-width: 850px) {
